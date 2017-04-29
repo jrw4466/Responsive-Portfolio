@@ -2,75 +2,71 @@
 <html lang="en">
 
 <head>
-	<title>Contact</title>
+	<title>About Me</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
 </head>
 
-<body>
-
-	<header id="Bar">
-		<h1>Jake Wyatt</h1>
+<body>		
 	
-		<ul>
-			<li><a href="contact.html">Contact</a></li>
-			<li><a href="portfolio.html">Portfolio</a></li>
-			<li><a href="index.html">About</a></li>
-		</ul>
-
+	<header id="masthead">
+	<div class="container">
+		<a href="index.html" id="logo">Jake Wyatt</a>
+			<nav>
+				<a href="index.html">About</a></li>
+				<a href="portfolio.html">Portfolio</a></li>
+				<a href="contact.html">Contact</a></li>	
+			</nav>
+		</div>
 	</header>
 
-	<div id="Wrapper">
-
-	<section id="Contact">
-	
-		<h2>Contact</h2>
-
-		<hr>
-
-		<div class="container">
-			<form action="/action_page.php">
-				
-				<label for="name">Name</label>
-				<input type="text" id="name" name="name" placeholder="John Smith">
-
-				<label for="email">Email</label>
-				<input type="text" id="email" name="email" placeholder="example@gmail.com">
-
-				<label for="message">Message</label>
-				<textarea id="message" name="message" placeholder=""></textarea>
-
-				<input type="submit" value="Submit">
-
+	<div id="main-container" class="container">
+		<section class="main-section">
+			<h1>Contact</h1>
+			
+			<form id="contact-form">
+				<ul>
+					<li>
+						<label for="name">Name</label>
+						<input type="text" name="name" id="name" placeholder="John Smith" required="required">
+					</li>					
+					<li>
+						<label for="email">Email</label>
+						<input type="text" name="email" id="email" placeholder="example@gmail.com" required="required">
+					</li>
+					<li>
+						<label for="message">Message</label>
+						<textarea id="message" name="message" required="required" ></textarea>
+					</li>
+				</ul>
+				<input type="submit" name="submit">		
 			</form>
 			
-		</div>
 
-	</section>
+		</section>
 
-	<section id="Connect">
-		<h2>Connect with Me</h2>
-
-		<hr>
-
-			<a href="https://github.com/jrw4466" target="_blank">
-				<img src="assets/images/1491846948_29_GitHub.png" alt="GitHub Pic">
-			</a>
-			<a href="https://www.linkedin.com/in/jake-wyatt-ii-42ab9148" target="_blank">
-				<img src="assets/images/1491846863_linkedin_square_color.png" alt="LinkedIn Pic">
-			</a>
-			<a href="http://stackexchange.com/users/10614883/jwyatt955">
-				<img src="assets/images/1491847006_stackoverflow.png" alt="StackoverflowPic">
-			</a>
-
-	</section>
-
+		<section class="sidebar">
+			<div id="connect">
+			<h2>Connect With Me</h2>
+		
+			<a href="https://github.com/jrw4466"></a>
+				<img src="assets/images/1491846948_29_GitHub.png" class="social" alt="GitHub Pic">
+			<a href="https://www.linkedin.com/in/jake-wyatt-ii-42ab9148"></a>
+				<img src="assets/images/1491846863_linkedin_square_color.png" class="social" alt="LinkedIn Pic">
+			<a href="http://stackexchange.com/users/10614883/jwyatt955"></a>
+				<img src="assets/images/1491847006_stackoverflow.png" class="social" alt="StackoverflowPic">
+			</div>
+		</section>
 	</div>
 
-	<footer>@ Copyright 2016 Jake Wyatt</footer>
+	<footer>
+		<div class="container">
+			&copy; Copyright 2016 Jake Wyatt
+		</div>
+	</footer>
 
 </body>
 </html>
